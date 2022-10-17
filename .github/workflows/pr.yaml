@@ -8,7 +8,7 @@ on:
 
 jobs:
   check-base-branch:
-    if: github.head_ref != "testing"
+    if: ${{ github.head_ref != "testing" }}
     runs-on: ubuntu-latest
     steps:
       - uses: a-b-r-o-w-n/check-base-branch-action@v1.1
